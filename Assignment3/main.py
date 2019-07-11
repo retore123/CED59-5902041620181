@@ -1,3 +1,4 @@
+#นายจิลลาภัทร คงเรือง#
 from math import*
 
 print("Result of return_42() is ", return_42());
