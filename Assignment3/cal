@@ -1,0 +1,43 @@
+##############################################################
+##########นายจิลลาภัทร คงเรือง CED 4RA 5902041620181#############
+##############################################################
+#เครื่องคิดเลข#
+print("########## WELCOME PROGRAME CALCULATOR BY JINLAPAT KONGROUNG ##########")
+class Calpro():
+  def __init__(self,xnum,ynum):
+    self.x = xnum
+    self.y = ynum
+
+  def multiply(self):
+    Total = self.x * self.y
+    print('Total',self.x ,'x',self.y ,'=' ,Total)
+
+  def plus(self):
+    Total = self.x + self.y
+    print('Total',self.x ,'+',self.y ,'=' ,Total)
+
+  def minus(self):
+    Total = self.x - self.y
+    print('Total',self.x ,'-',self.y ,'=' ,Total)
+
+  def divide(self):
+    Total = self.x / self.y
+    print('Total',self.x ,'/',self.y ,'=' ,Total)
+
+
+x = int(input("INPUT NUMBER1(number) : "))
+y = int(input("INPUT NUMBER2(number) : "))
+CAL = input("+,-,*,/ : ")
+inputnumA = Calpro(x,y)
+
+if CAL == '+':
+  inputnumA.plus()
+if CAL == '-':
+  inputnumA.minus()
+if CAL == '*':
+  inputnumA.multiply()
+if CAL == '/':
+  inputnumA.divide()
+print("END PROGRAME")
+##############################################################
+##############################################################
