@@ -1,0 +1,61 @@
+<!-- นายจิลลาภัทร คงเรือง 5902041620181 CED 4RA -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>This is HOMEWORK</title>
+  <script language="JavaScript">
+    function CheckForm()
+  {
+      if(frm.firstname.value == '')
+      {
+        alert("ENTER YOUR FRISTNAME")
+        frm.firstname.focus()
+        return false
+      }
+      else if(frm.lastname.value == '')
+      {
+        alert("ENTER YOUR LASTNAME")
+        frm.lastname.focus()
+        return false
+      }
+      else if(frm.PASSWORD.value == '')
+      {
+        alert("ENTER YOUR PASSWORD")
+        frm.PASSWORD.focus()
+        return false
+      }
+      else if(frm.EMAIL.value == '')
+      {
+        alert("ENTER YOUR EMAIL")
+        frm.EMAIL.focus()
+        return false
+      }
+  }
+
+</script>
+
+</head>
+
+<body>
+<center>
+<h2>MEMBER FROM</h2>
+  <form name="frm"  method="post" action="/action_page.php" onsubmit="return CheckForm()" required="required">
+  First name:<br>
+  <input type="text" name="firstname"  >
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" >
+  <br>
+  PASSWORD:<br>
+  <input type="text" name="PASSWORD" minlength="8">
+  <br>
+  EMAIL:<br>
+  <input name="email" onblur="check_email(this)" type="text" required="required" id="email" pattern=".+@Gmail.com" />
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</center>
+
+
+</body>
+</html>
