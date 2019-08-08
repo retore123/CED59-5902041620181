@@ -1,5 +1,7 @@
 #นายจิลลาภัทร คงเรือง 5902041620181 CED 4RA#
 #cp -R assignment6 assignment7 คำสั่ง copy ใน GITHUB
+#git pull ดึงไฟล์จาก GITHUB
+
 from flask import Flask,  request, escape, render_template
 
 app = Flask(__name__)
