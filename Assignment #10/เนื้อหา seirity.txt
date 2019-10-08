@@ -1,0 +1,13 @@
+CIA
+c= confidentiality ความสามารถในการควบคุมระบบ
+i= integrity ความน่าเชื่อถือของระบบ
+a= Availability สิทธิ์ว่าทำได้มากน้อยแค่ไหน
+php yii migrate
+MVC
+CRUD
+
+php -S localhost:8090 -t .
+http://localhost:8090/frontend/web
+http://localhost:8090/backend/web
+
+
